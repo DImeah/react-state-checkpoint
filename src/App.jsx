@@ -46,7 +46,10 @@ class App extends Component {
           <Navbar />
         </div>
         <div className="grid justify-items-center">
-          <h1 className="font-extrabold text-2xl ">
+          <h1
+            onClick={this.handleToggleShow}
+            className="font-extrabold text-2xl "
+          >
             Hi there, want to know more? Hit the toggle button...
           </h1>
           <button type="dashed" onClick={this.handleToggleShow}>
